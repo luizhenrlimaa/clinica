@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/02/07 16:00:29.887,=C:\Users\luizh\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/07 16:01:04.199,C:\Users\luizh\Desktop\clinica\unitPrincipal.pas=C:\Users\luizh\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/07 16:01:04.199,C:\Users\luizh\Desktop\clinica\unitPrincipal.dfm=C:\Users\luizh\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/02/07 16:01:21.107,C:\Users\luizh\Desktop\clinica\Clinica.dproj=C:\Users\luizh\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/02/07 16:30:51.129,=C:\Users\luizh\Desktop\clinica\Unit2.pas</Transaction>
+    <Transaction>2022/02/07 16:31:15.586,C:\Users\luizh\Desktop\clinica\unitCadPacientes.pas=C:\Users\luizh\Desktop\clinica\Unit2.pas</Transaction>
+    <Transaction>2022/02/07 16:31:15.586,C:\Users\luizh\Desktop\clinica\unitCadPacientes.dfm=C:\Users\luizh\Desktop\clinica\Unit2.dfm</Transaction>
+    <Transaction>2022/02/07 16:31:30.999,=C:\Users\luizh\Desktop\clinica\Unit3.pas</Transaction>
+    <Transaction>2022/02/07 16:31:43.557,C:\Users\luizh\Desktop\clinica\unitCadAgendamentos.pas=C:\Users\luizh\Desktop\clinica\Unit3.pas</Transaction>
+    <Transaction>2022/02/07 16:31:43.557,C:\Users\luizh\Desktop\clinica\unitCadAgendamentos.dfm=C:\Users\luizh\Desktop\clinica\Unit3.dfm</Transaction>
+    <Transaction>2022/02/07 17:02:54.875,=C:\Users\luizh\Desktop\clinica\Unit1.pas</Transaction>
+    <Transaction>2022/02/07 17:09:17.653,C:\Users\luizh\Desktop\clinica\unitDM.pas=C:\Users\luizh\Desktop\clinica\Unit1.pas</Transaction>
+    <Transaction>2022/02/07 17:09:17.653,C:\Users\luizh\Desktop\clinica\unitDM.dfm=C:\Users\luizh\Desktop\clinica\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

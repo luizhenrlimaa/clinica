@@ -1,0 +1,70 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 439
+  Width = 560
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=clinica'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 104
+    Top = 64
+  end
+  object tbPaciente: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    TableName = 'clinica.paciente'
+    Left = 224
+    Top = 64
+    object tbPacienteid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object tbPacientenome: TStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 80
+    end
+    object tbPacientecpf: TStringField
+      FieldName = 'cpf'
+      Origin = 'cpf'
+      Required = True
+      EditMask = '###.###.###-##;1;_'
+      Size = 80
+    end
+    object tbPacientecelular: TStringField
+      FieldName = 'celular'
+      Origin = 'celular'
+      Required = True
+      EditMask = '(##) #.####-####;1;_'
+      Size = 16
+    end
+    object tbPacientedata_cadastro: TDateField
+      FieldName = 'data_cadastro'
+      Origin = 'data_cadastro'
+      Required = True
+    end
+  end
+  object tbAgendamento: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    TableName = 'clinica.agendamento'
+    Left = 312
+    Top = 64
+  end
+  object dsPaciente: TDataSource
+    DataSet = tbPaciente
+    Left = 224
+    Top = 136
+  end
+  object dsAgendamento: TDataSource
+    DataSet = tbAgendamento
+    Left = 312
+    Top = 136
+  end
+end
