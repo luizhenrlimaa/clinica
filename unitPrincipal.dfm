@@ -737,7 +737,7 @@ object formPrincipal: TformPrincipal
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000001FFD9}
-    ExplicitLeft = 1
+    ExplicitLeft = 8
     ExplicitTop = 94
   end
   object Panel1: TPanel
@@ -749,7 +749,6 @@ object formPrincipal: TformPrincipal
     Color = clSilver
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 707
     object BitBtn1: TBitBtn
       Left = 105
       Top = 1
@@ -979,8 +978,6 @@ object formPrincipal: TformPrincipal
       Layout = blGlyphTop
       TabOrder = 0
       OnClick = BitBtn1Click
-      ExplicitLeft = 1
-      ExplicitHeight = 111
     end
     object BitBtn2: TBitBtn
       Left = 1
@@ -1211,7 +1208,6 @@ object formPrincipal: TformPrincipal
       Layout = blGlyphTop
       TabOrder = 1
       OnClick = BitBtn2Click
-      ExplicitHeight = 111
     end
   end
   object MainMenu1: TMainMenu

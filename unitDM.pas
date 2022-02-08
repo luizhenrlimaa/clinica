@@ -28,7 +28,9 @@ type
     tbAgendamentohora: TStringField;
     tbAgendamentoespecialidade: TStringField;
     tbAgendamentomedico: TStringField;
+    consulta: TFDQuery;
     procedure tbPacienteAfterInsert(DataSet: TDataSet);
+    procedure tbPacienteBeforePost(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -42,11 +44,29 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
+uses unitCadPacientes, unitCadAgendamentos , Dialogs;
 {$R *.dfm}
+
 
 procedure TDM.tbPacienteAfterInsert(DataSet: TDataSet);
 begin
   tbPacientedata_cadastro.Value := Date();
+end;
+
+procedure TDM.tbPacienteBeforePost(DataSet: TDataSet);
+begin
+      consulta.Close;
+      consulta.SQL.Clear;
+      consulta.SQL.Add('SELECT cpf from paciente WHERE  cpf = :pCpf');
+      consulta.ParamByName('pCpf').Value := tbPacientecpf.Text ;
+      consulta.Open;
+
+      if (consulta.RecordCount > 0) then
+
+         begin
+            ShowMessage('CPF já cadastrado!');
+            Abort;
+         end;
 end;
 
 end.

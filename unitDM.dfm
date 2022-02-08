@@ -15,6 +15,7 @@ object DM: TDM
   object tbPaciente: TFDTable
     Active = True
     AfterInsert = tbPacienteAfterInsert
+    BeforePost = tbPacienteBeforePost
     IndexFieldNames = 'id'
     Connection = Conexao
     TableName = 'clinica.paciente'
@@ -23,6 +24,7 @@ object DM: TDM
     object tbPacienteid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbPacientenome: TStringField
       FieldName = 'nome'
@@ -60,6 +62,7 @@ object DM: TDM
     object tbAgendamentoid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbAgendamentoid_paciente: TIntegerField
       FieldName = 'id_paciente'
@@ -101,5 +104,17 @@ object DM: TDM
     DataSet = tbAgendamento
     Left = 312
     Top = 136
+  end
+  object consulta: TFDQuery
+    Connection = Conexao
+    Left = 264
+    Top = 216
+    ParamData = <
+      item
+        Name = 'pCpf'
+      end
+      item
+        Name = 'pId'
+      end>
   end
 end

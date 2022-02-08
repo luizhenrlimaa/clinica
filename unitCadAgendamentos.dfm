@@ -65,8 +65,6 @@ object formCadAgendamentos: TformCadAgendamentos
     Height = 97
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = -63
-    ExplicitWidth = 721
     object Label1: TLabel
       Left = 80
       Top = 37
@@ -148,7 +146,7 @@ object formCadAgendamentos: TformCadAgendamentos
     Left = 40
     Top = 360
     Width = 257
-    Height = 25
+    Height = 21
     DataField = 'medico'
     DataSource = DM.dsAgendamento
     TabOrder = 6

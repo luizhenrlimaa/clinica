@@ -71,7 +71,6 @@ object formCadPacientes: TformCadPacientes
     Height = 97
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = -8
     object Label1: TLabel
       Left = 80
       Top = 37
